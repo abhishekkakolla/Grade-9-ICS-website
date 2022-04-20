@@ -1,0 +1,135 @@
+<!doctype html>
+
+<!-- Jerry W. -->
+<!-- 
+Validated
+-->
+
+<!-- 
+List of all classes
+1. Navbar:
+-"navbar"
+-"nav_bt"
+-"nav_link"
+-"nav_image"
+2. Top section:
+-"top"
+-"page_title"
+-"subtitle"
+3. content section:
+-"content"
+-"sect"
+-"sect_title"
+-"subsect"
+-"subsect_title"
+-"pop_up_bt"
+-"pop_up_text"
+5. footer section:
+-"footer"
+
+Only on this page:
+*-lists:
+->"nested_ul_hd"
+-->
+
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<title>Overview</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<link rel = "stylesheet" type = "text/css" href = "overview_style.css">
+	</head>
+
+	<body>
+		<!-- start of navbar -->
+		<div class = "navbar">
+			<span class = "nav_bt"><img src="images/navbar_arrow.png" alt = "icon" id = "nav_img1"/></span>
+			<ul class = "navbar_nav">
+				<li><a href = "index.html" class = "nav_link">Home</a></li>
+				
+				<li><img src= "images/overview.png" alt = "icon" id = "nav_img2"/></li>
+				<li><a href = "overview.html" class = "nav_link">Overview</a></li>
+				
+				<li><img src = "images/specifications.png" alt = "icon" id = "nav_img3"/></li>
+				<li><a href = "specification.html" class = "nav_link">Specifications</a></li>
+				
+				<li><img src = "images/information.png" alt = "icon" id = "nav_img4"/></li>
+				<li><a href = "extra.html" class = "nav_link">More Information</a></li>
+				
+				<li><img src = "images/reference.png" alt = "icon" id = "nav_img5"/></li>
+				<li><a href = "reference.html" class = "nav_link">References</a></li>
+			</ul>
+		</div>
+		<!-- end of nav bar -->
+	
+		<!-- start of top -->
+		<div class = "top" id = "overview_top">
+			<h1 class = "page_title">The CPU</h1>
+			<br/>
+			<p class = "subtitle">
+				General Information About the CPU
+			</p>
+			<p class = "img_citation">
+				Source: Игорь Кирюшкин. CPU. PublicDomainPictures.net.
+				<a href = "https://www.publicdomainpictures.net/en/view-image.php?image=137430&picture=cpu">https://www.publicdomainpictures.net/en/view-image.php?image=137430&picture=cpu</a>
+			</p>
+		</div>
+		<!-- end of top -->
+
+		<!-- start of content -->
+		<div class = "content">
+			<!-- Sect "What is a CPU?" HTML Complete -->
+			<div class = "sect">
+				<h2 class = "sect_title">What is a CPU?</h2>
+				<p>
+					The CPU stands for "Central Processing Unit." It is often referred to as the "brain of the computer" because it facilitates the basic tasks of the computer. 
+					As its name suggests, the CPU is a processing device that is solely responsible for executing commands in programs.
+				</p>
+				
+				<div class = "subsect">
+					<h3 class = "subsect_title">Why is the CPU important?</h3>
+					<p>
+						Since the CPU carries the full burden of executing instructions, you want a fast CPU to maximize your computer speed. 
+						The CPU used have a much more significant influence on a computer's performance, 
+						but it still plays a major role today. A powerful CPU won't be a bottleneck in your computer.
+					</p>
+				</div>
+				
+				<div class = "subsect">
+					<h3 class = "subsect_title">What is the CPU made of?</h3>
+					<p>
+						In the old days, the CPU contained only a single processing core.
+						<span class = "pop_up_bt">(what is a processing core?)</span>
+						<span class = "pop_up_text">
+								<br/><br/>
+								It is often easy to confuse the terms "processor" and "processing core." The terms "CPU" and "processor" can be used interchangeably, 
+								but a processing core is not exactly the same as a CPU. In general, a processing core can be thought of as a single unit that carries out one instruction at a time.
+								The CPU is essentially a groups of processing cores collaborating. Since each processing core can handle a single task, 
+								having multiple processing cores will allow the CPU to multi-task. Thanks to technology, 
+								current processing cores use "multi-threading" to create virtual cores, thus enabling them to multi-task.
+								However, these virtual cores are not as powerful as a physical core.
+						</span>
+						<br/><br/>
+						Modern CPUs contain multiple processors, called cores, which work together to process instructions. 
+						Currently, there are CPUs with 2, 4, 6, 8, 10 and even 12 or 16 cores.
+					</p>
+				</div>
+			</div>
+			
+		</div>
+		<!-- end of content -->
+
+		<!-- start of footer -->
+		<div class = "footer">
+			<p>
+				Welcome to website "All About the CPU" ! <br/>
+				We hope you'll enjoy our website!
+			</p>
+			<div class = "to_top">
+				<a href = "#overview_top">Back to Top</a>
+			</div>
+		</div>
+		<!-- end of footer -->
+	</body>
+
+</html>

@@ -1,0 +1,268 @@
+/*Author: Abhishek K */
+
+body {
+	background-color: #373B52; /* default background-color */
+	color: black;
+	font-family: "Helvetica", Times, Serif;
+	margin-bottom: 4rem;
+	padding-bottom: 1rem;
+}
+
+
+.footer {
+	text-align: center;
+	background-color: black;
+	border-top-style: double;
+	border-top-width: 4px;
+	border-top-color: #FEEEFE;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+
+.background {
+	margin-left: -8px;
+	height: 14.55vw;
+	left: 0px;
+	top: 0px;
+}
+
+.text-background {
+	background-color: white;
+	margin-top: 530px;
+	height: 1000px;
+	width: 1200px;
+	margin-left: 145px;
+	position: relative;
+	z-index: 1;
+}
+
+.header {
+	margin-top: -560px;
+	margin-left: 450px;
+	z-index: 2;
+}
+
+.paragraph {
+	font-size: 20px;
+	position: relative;
+	z-index: 2;
+	margin-left: 40px;
+}
+
+/*Styles the image to have a certain height, layer, and border */
+.image {
+	height: 150px;
+	position: relative;
+	z-index: 3;
+	border: 3px solid #9e908e;
+	transition: transform 0.2s; /* Zoom animation */
+}
+
+.image:hover {
+	transform: scale(1.1);
+}
+
+/*Positions the image to the left*/
+.image-left {
+	float: left;
+	margin-left: 40px;
+	margin-right: 20px;
+	margin-top: 40px;
+}
+
+.image-right {
+	margin-top: 50px;
+	margin-right: 15px;
+	float: right;
+}
+
+
+.old-cpus {
+	margin-top: 60px;
+	height: 332px;
+	background-color: white;
+	
+}
+
+.honeycomb-background {
+	margin-left: -8px;
+	width: 1518px; 
+	position: absolute;
+	z-index: 1;
+	
+}
+
+.part2 {
+	margin-left: 10px;
+	position: relative;
+	z-index: 2;
+}
+
+.old-cpu-table {
+	border: 2px solid black;
+	position: relative;
+	z-index: 2;
+	margin-top: 180px;
+	color: white;
+}
+
+
+th, td {
+	border: 2px solid black;
+}
+
+.table-image {
+	height: 100px;
+	transition: transform 0.2s; /* Zoom animation */
+	
+}
+
+.table-image:hover {
+	transform: scale(1.1);
+}
+
+.fontsize {
+	font-size: 20px;
+	
+}
+
+.current-cpus {
+	height: 600px;
+	background-color: white;
+	margin-top: 700px;
+	margin-left: -8px;
+}
+
+
+.current-cpu-table {
+	border: 2px solid red;
+	margin-left: 900px;
+	margin-top: 100px;
+	font-size: 20px;
+	
+}
+
+.navbar {
+	background-color: #261818;
+	height: 3rem;
+	width: 100vw;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	transition: height 1s;
+	/* The following code will display the ">>" symbol on the same line as the nav bar in explorer and edge;
+	unfortunately, does not display properly in chrome. :( */
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	z-index: 4;
+}
+
+.navbar_nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	display:flex;
+	
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.nav_bt {
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+	width: 4rem;
+	opacity: 1;
+}
+
+/* Note: the rule below will not apply if mouse is hovering over navbar instead of .nav_bt */
+.nav_bt:hover + .navbar_nav{
+	opacity: 1;
+}
+
+
+/* Repeating the above rule seems to be the only way to keep the navbar opaque while hovered over */
+.navbar_nav:hover{
+	opacity: 1;
+}
+
+.nav_bt {
+	transition: transform 1s;
+}
+
+/*Rotate animation for the button */
+.nav_bt:hover {
+	transform: rotate(180deg);
+}
+
+.navbar:hover {
+	height: 5rem;
+}
+
+
+.nav_link {
+	color: white; /* make nav_bar links white */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 8rem;
+}
+
+/* Nav bar icons */
+#nav_img1 {
+	height: 50px;
+	margin-right: 10px;
+}
+
+#nav_img2 {
+	margin-left: 20px;
+	margin-right: -15px;
+	width: 50px;
+	height: 40px;
+}
+
+#nav_img3 {
+	width: 40px;
+	height: 40px;
+}
+
+#nav_img4 {
+	width: 40px;
+	height: 40px;
+}
+
+#nav_img5 {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+/* change hyperlink brightness/opacity to fit page color scheme better */
+a {
+	opacity: 0.8;
+	filter: brightness(75%);
+}
+
+a:hover {
+	opacity: 1;
+	filter: brightness(100%);
+}
+
+a:visited {
+	opacity: 0.9;
+	filter: brightness(50%);
+}
+
+.navbar_image {
+	margin-left: 5px;
+	margin-right: -10px;
+	height: 30px;
+}
+
+

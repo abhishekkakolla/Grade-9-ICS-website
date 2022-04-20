@@ -1,0 +1,203 @@
+/* Created by Abhishek K. and Jerry W. */
+/* "Universal" stylesheet, contains all default styles */
+
+body {
+	background-color: #373B52; /* default background-color */
+	color: #EEEEEE;
+	font-family: "Helvetica", Times, Serif;
+	margin-bottom: 4rem;
+	padding-bottom: 1rem;
+}
+
+/* nav bar */
+/* Extracted code from "https://www.youtube.com/watch?v=biOMz4puGt8"
+	See more in "reference.html" 
+	this includes code in .navbar, .navbar_nav, .nav_bt, .nav_link
+*/
+
+.navbar {
+	background-color: #261818;
+	height: 3rem;
+	width: 100vw;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	transition: height 1s;
+	
+	/* The following code will display the ">>" symbol on the same line as the nav bar in explorer and edge;
+	unfortunately, does not display properly in chrome. :( */
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	z-index: 1;
+}
+
+.navbar_nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	align-items: center;
+	display:flex;
+	
+	opacity: 0;
+	transition-property: opacity;
+	transition-duration: 1s;
+}
+
+.nav_bt {
+	display: flex;
+	font-size: 20px;
+	text-align: center;
+	width: 4rem;
+}
+
+/* Note: the rule below will not apply if mouse is hovering over navbar instead of .nav_bt */
+.nav_bt:hover + .navbar_nav{
+	opacity: 1;
+}
+
+
+/* Repeating the above rule seems to be the only way to keep the navbar opaque while hovered over */
+.navbar_nav:hover{
+	opacity: 1;
+}
+
+.nav_bt {
+	transition: transform 1s;
+}
+
+/*Rotate animation for the button */
+.nav_bt:hover {
+	transform: rotate(180deg);
+}
+
+.navbar:hover {
+	height: 5rem;
+}
+
+
+.nav_link {
+	color: white; /* make nav_bar links white */
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 8rem;
+}
+
+/* Nav bar icons */
+#nav_img1 {
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+
+#nav_img2 {
+	margin-left: 20px;
+	margin-right: -10px;
+	width: 50px;
+	height: 40px;
+}
+
+#nav_img3 {
+	width: 40px;
+	height: 40px;
+}
+
+#nav_img4 {
+	width: 40px;
+	height: 40px;
+}
+
+#nav_img5 {
+	width: 40px;
+	height: 40px;
+	margin-left: 10px;
+}
+
+/* change hyperlink brightness/opacity to fit page color scheme better */
+a {
+	opacity: 0.8;
+	filter: brightness(75%);
+}
+
+a:hover {
+	opacity: 1;
+	filter: brightness(100%);
+}
+
+a:visited {
+	opacity: 0.9;
+	filter: brightness(50%);
+}
+
+.navbar_image {
+	margin-left: 5px;
+	margin-right: -10px;
+	height: 30px;
+}
+
+/* div css */
+/* main div */
+.top {
+	border-style: double;
+	border-width: 3px;
+	border-color: #FFFFFF;
+	margin: 5px;
+	padding: 10px;
+	text-align: center;
+}
+
+.content {
+	background-color: #71696A;
+	padding: 5px;
+}
+
+.footer {
+	text-align: center;
+	background-color: black;
+	border-top-style: double;
+	border-top-width: 4px;
+	border-top-color: #FEEEFE;
+	margin: 0px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+
+/* secondary div */
+.sect {
+	border-top-style: dashed;
+	border-top-width: 5px;
+	border-top-color: #123321;
+	margin: 10px 25px;
+	padding: 15px 15px 5px;
+}
+
+.subsect {
+	border-bottom-style: dotted;
+	border-bottom-width: 2px;
+	border-bottom-color: #122C2A;
+	padding-bottom: 10px;
+}
+
+/* header css */
+.page_title {
+}
+
+/* paragraph css */
+p {
+	font-size: 18px;
+}
+
+.subtitle {
+	color: #D5D9DE;
+	font-size: 16px;
+	font-style: italic;
+}
+
+/* image citation styling */
+.img_citation {
+	font-family: "Times New Roman", Times, Serif;
+	font-size: 12px;
+	color: #CEE5E0;
+}

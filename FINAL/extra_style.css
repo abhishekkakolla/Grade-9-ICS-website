@@ -1,0 +1,128 @@
+/* Created by Jerry W */
+
+/* Specific styling for extra.html only */
+/*
+Validated
+
+The functions of the attributes below should be evident.
+
+List of specifically styled content:
+-tables
+-> table elements
+-> th elements
+-> td elements
+-> # id blank_cell
+-image styling (some images will be given unique style)
+*/
+
+/* table borders 
+	Note: there doesn't seem to be a way to avoid double borders unless a border attribute is given to table tag;
+	But then the code wouldn't be very clean
+*/
+table, th, td {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #1B101A;
+	word-wrap: break-word; /* for text wrapping */
+}
+
+/* table styling */
+table {
+	table-layout: fixed;
+	width: 90%;
+	
+	margin: 20px 50px;
+}
+
+/* th styling */
+th {
+	text-align: center;
+	padding: 5px;
+}
+
+td {
+	text-align: left;
+	vertical-align: top;
+	padding: 5px;
+}
+
+/* Styling for a specific blank cell in a table */
+#blank_cell {
+	background-color: #111111;
+	opacity: 0.5;
+}
+
+/* list styling */
+#resource_li {
+	list-style: none;
+}
+
+/* image styling */
+/* microprocessor image */
+#microprocessor {
+	width: 150px;
+	height: 150px;
+	opacity: 0.5;
+	transition: opacity 1s;
+	
+	float: left;
+	margin-right: 20px;
+}
+
+#microprocessor:hover {
+	opacity: 1;
+}
+
+/* random cpu image */
+#random_cpu {
+	width: 150px;
+	height: 150px;
+	filter: grayscale(100%);
+	transition: width 1s, height 1s, filter 1.2s;
+	
+	float: left;
+	margin-right: 20px;
+}
+
+#random_cpu:hover {
+	width: 200px;
+	height: 200px;
+	filter: grayscale(0%);
+}
+
+/* CPU images */
+#ryzen3 {
+	width: 200px;
+	height: 150px;
+	
+	transition: width 1s, height 1s;
+}
+
+#ryzen3:hover {
+	width: 260px;
+	height: 200px;
+}
+
+#ryzen5 {
+	width: 180px;
+	height: 150px;
+	
+	transition: width 1s, height 1s;
+}
+
+#ryzen5:hover {
+	width: 240px;
+	height: 200px;
+}
+
+#ryzen7 {
+	width: 150px;
+	height: 150px;
+	
+	transition: width 1s, height 1s;
+}
+
+#ryzen7:hover {
+	width: 200px;
+	height: 200px;
+}

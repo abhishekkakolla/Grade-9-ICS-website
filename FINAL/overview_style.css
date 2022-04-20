@@ -1,0 +1,35 @@
+/* Created by Jerry W */
+
+/* Specific styling for overview.html only */
+/*
+Validated
+List of specifically styled content:
+1. span tags:
+-in class = "pop_up_bt"
+-in class = "pop_up_text"
+*/
+
+/* Overview of top */
+#overview_top {
+	background-image: url("images/overview_background.png");
+	background-size: 100% 100%;
+}
+
+/* an element which will reveal hidden text when hovered over */
+.pop_up_bt {
+	color: #030A52;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/* hidden text until activated */
+.pop_up_text {
+	display: none;
+}
+
+/*
+	reveals hidden text
+*/
+.pop_up_bt:hover + .pop_up_text {
+	display: inline;
+}
